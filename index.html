@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: darkgray;
+    }
+    .parentContainer {
+        width: 1680px;
+        height: 920px;
+        background-color: black;
+        position: relative;
+    }
+    .childContainer {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: purple;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class = "parentContainer">
+    <div class="childContainer">
+        <p style="color: white; margin-left: 75px">Login</p>
+        <label for="username">Username</label>
+        <input name="username" id="username" style="color: black" type="text">
+        <label for="password">Password</label>
+        <input name="password" id="password" style="color: black" type="text">
+        <button id="navButton" style="margin-top: 20px; margin-left: 70px">Login</button>
+        <script type="text/javascript">
+            document.getElementById("navButton").onclick = function () {
+                window.location.href = "Home-Page.html";
+            }
+        </script>
+    </div>
+</div>
+</body>
+</html>
